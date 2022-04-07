@@ -41,9 +41,9 @@ input,
 input:focus,
 button,
 button:focus,
-textarea,
-textarea:focus {
-    all: unset;
+textarea {
+    border: none;
+    outline: none;
     resize: none;
 }
 
@@ -643,22 +643,21 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    flex-wrap: wrap;
+    row-gap: 30px;
 }
 
 .pcard{
     width: 360px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: 300ms;
+    transition: 500ms;
+    overflow: hidden;
 }
 
 .pcard:hover{
     box-shadow: 0px 100px 80px rgba(191, 191, 191, 0.07), 0px 41.7776px 33.4221px rgba(191, 191, 191, 0.0503198), 0px 22.3363px 17.869px rgba(191, 191, 191, 0.0417275), 0px 12.5216px 10.0172px rgba(191, 191, 191, 0.035), 0px 6.6501px 5.32008px rgba(191, 191, 191, 0.0282725), 0px 2.76726px 2.21381px rgba(191, 191, 191, 0.0196802);
     border: transparent;
-}
-
-.pcard:hover .pcard__bottom{
-    background: #FAFAFA;
 }
 
 .pcard__top{
@@ -677,14 +676,14 @@ i {
 }
 
 .pcard__img-bl{
-    width: 100%;
+    width: 90%;
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .pcard__img{
-    width: 800%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -692,17 +691,38 @@ i {
 /* pcard__bottom */
 .pcard__bottom{
     padding: 27px 35px;
+    transition: 300ms;
 }
 
-/* .card-main{
+.pcard:hover .pcard__bottom{
+    background: #FAFAFA;
+    /* margin: -1px; */
+}
 
-} */
+.card-main{
+    width: 200%;
+    display: flex;
+    /* justify-content: space-between; */
+}
 
 .card-main__funcs{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    /* display: none; */
+    /* opacity: 0; */
+    transition: 300ms;
+    transform: translateX(-120%);
+    pointer-events: none;
+}
+
+.pcard:hover .card-main__funcs{
+    /* display: none; */
+    /* opacity: 1; */
+    transform: translateX(0);
+    pointer-events:all;
 }
 
 .card-main__btn{
@@ -710,14 +730,23 @@ i {
     color: #000;
 }
 
-.card-main__heading{
+.card-main__icon{
+    cursor: pointer;
+}
+
+.pcard__heading{
+    width: 50%;
     font-family: 'Hind Siliguri';
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
     line-height: 40px;
-    
-    color: #030D15;    
+    color: #030D15;  
+    transform: translateX(-100%);
+    transition: 500ms;
+}
+.pcard:hover .pcard__heading{
+    transform: translateX(120%);
 }
 
 .pfooter{
@@ -732,6 +761,12 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.pcard:hover .pfooter__colors{
+    opacity: 1;
 }
 
 .pfooter__color{
@@ -739,6 +774,7 @@ i {
     width: 14px;
     height: 14px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .pfooter__color-active{
@@ -755,6 +791,15 @@ i {
 
 .pfooter__color2{
     background: #2F80ED;
+}
+
+.pfooter__star{
+    font-size: 16px;
+    transition: 500ms;
+}
+
+.pcard:hover .pfooter__star{
+    font-size: 14px;
 }
 
 /* pcard__bottom - end */
