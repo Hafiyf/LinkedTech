@@ -303,7 +303,7 @@ i {
     gap: 30px;
 }
 
-.recents__shop-card{
+.recents__shop-card {
     position: absolute;
     width: 44px;
     height: 44px;
@@ -512,7 +512,7 @@ i {
     gap: 131.38px;
 }
 
-.about__title {
+.gen__title {
     font-family: 'Hind Siliguri';
     font-style: normal;
     font-weight: 500;
@@ -520,32 +520,43 @@ i {
     line-height: 23px;
     letter-spacing: 0.145em;
     text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
 
     color: #C72535;
     opacity: 0.6;
 }
 
-.about__heading {
+.about__title {
+    text-align: left;
+}
+
+.gen__heading {
     width: 378px;
     font-family: 'Hind Siliguri';
     font-style: normal;
     font-weight: 600;
     font-size: 44px;
+    margin: 0 auto;
     line-height: 71px;
     color: #030D15;
 }
 
-.about__text {
+.gen__text {
     font-family: 'Hind Siliguri';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 115px;
-    margin-bottom: 40px;
+    /* margin: 0 auto; */
 
     color: #030D15;
     opacity: 0.6;
+}
+
+.about__text {
+    margin-top: 115px;
+    margin-bottom: 40px;
 }
 
 .about__var-item {
@@ -587,7 +598,7 @@ i {
     /* text-align: center; */
 }
 
-.pop-prods__title {
+/* .pop-prods__title {
     font-family: 'Hind Siliguri';
     font-style: normal;
     font-weight: 500;
@@ -609,9 +620,9 @@ i {
     line-height: 71px;
     text-align: center;
     color: #030D15;
-}
+} */
 
-.pop__menu{
+.pop__menu {
     width: 490px;
     display: flex;
     justify-content: space-between;
@@ -619,27 +630,27 @@ i {
     margin: 22px auto 50px;
 }
 
-.pop-menu__link{
+.pop-menu__link {
     font-family: 'Hind Siliguri';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
-    
+
     text-transform: uppercase;
     color: #030D15;
     opacity: 0.6;
     transition: 300ms;
 }
 
-.pop-menu__link:hover{
+.pop-menu__link:hover {
     color: #C72535;
     opacity: 1;
 }
 
 /* POP PRODS - CARDS */
 /* ------------------------- */
-.pop-cards{
+.pop-cards {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -647,7 +658,7 @@ i {
     row-gap: 30px;
 }
 
-.pcard{
+.pcard {
     width: 360px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -655,17 +666,17 @@ i {
     overflow: hidden;
 }
 
-.pcard:hover{
+.pcard:hover {
     box-shadow: 0px 100px 80px rgba(191, 191, 191, 0.07), 0px 41.7776px 33.4221px rgba(191, 191, 191, 0.0503198), 0px 22.3363px 17.869px rgba(191, 191, 191, 0.0417275), 0px 12.5216px 10.0172px rgba(191, 191, 191, 0.035), 0px 6.6501px 5.32008px rgba(191, 191, 191, 0.0282725), 0px 2.76726px 2.21381px rgba(191, 191, 191, 0.0196802);
     border: transparent;
 }
 
-.pcard__top{
+.pcard__top {
     width: 100%;
     padding: 35px 37px;
 }
 
-.pcard__suptitle{
+.pcard__suptitle {
     font-family: 'Hind Siliguri';
     font-style: normal;
     font-weight: 400;
@@ -675,42 +686,43 @@ i {
     color: #030D15;
 }
 
-.pcard__img-bl{
+.pcard__img-bl {
     width: 90%;
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pcard__img{
+
+.pcard__img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
 /* pcard__bottom */
-.pcard__bottom{
+.pcard__bottom {
     padding: 27px 35px;
     transition: 300ms;
 }
 
-.pcard:hover .pcard__bottom{
+.pcard:hover .pcard__bottom {
     background: #FAFAFA;
     /* margin: -1px; */
 }
 
-.card-main{
+.card-main {
     width: 200%;
     display: flex;
     /* justify-content: space-between; */
 }
 
-.card-main__funcs{
+.card-main__funcs {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     /* display: none; */
     /* opacity: 0; */
     transition: 300ms;
@@ -718,45 +730,46 @@ i {
     pointer-events: none;
 }
 
-.pcard:hover .card-main__funcs{
+.pcard:hover .card-main__funcs {
     /* display: none; */
     /* opacity: 1; */
     transform: translateX(0);
-    pointer-events:all;
+    pointer-events: all;
 }
 
-.card-main__btn{
+.card-main__btn {
     font-size: 22px;
     color: #000;
 }
 
-.card-main__icon{
+.card-main__icon {
     cursor: pointer;
 }
 
-.pcard__heading{
+.pcard__heading {
     width: 50%;
     font-family: 'Hind Siliguri';
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
     line-height: 40px;
-    color: #030D15;  
+    color: #030D15;
     transform: translateX(-100%);
     transition: 500ms;
 }
-.pcard:hover .pcard__heading{
+
+.pcard:hover .pcard__heading {
     transform: translateX(120%);
 }
 
-.pfooter{
+.pfooter {
     margin-top: 3px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.pfooter__colors{
+.pfooter__colors {
     width: 30%;
     display: flex;
     justify-content: space-between;
@@ -765,11 +778,11 @@ i {
     transition: 500ms;
 }
 
-.pcard:hover .pfooter__colors{
+.pcard:hover .pfooter__colors {
     opacity: 1;
 }
 
-.pfooter__color{
+.pfooter__color {
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -777,7 +790,7 @@ i {
     cursor: pointer;
 }
 
-.pfooter__color-active{
+.pfooter__color-active {
     width: 20px;
     height: 20px;
     border: 3px solid #fff;
@@ -785,20 +798,20 @@ i {
     box-shadow: 0 0 0.6px #000, 0 0 0.8px #000, 0 0 0.9px #000;
 }
 
-.pfooter__color1{
+.pfooter__color1 {
     background: #15151D;
 }
 
-.pfooter__color2{
+.pfooter__color2 {
     background: #2F80ED;
 }
 
-.pfooter__star{
+.pfooter__star {
     font-size: 16px;
     transition: 500ms;
 }
 
-.pcard:hover .pfooter__star{
+.pcard:hover .pfooter__star {
     font-size: 14px;
 }
 
@@ -806,9 +819,9 @@ i {
 
 /* HOVER */
 
-.pop__all{
+.pop__all {
     display: block;
-    margin-top:40px;
+    margin-top: 40px;
     font-family: 'Hind Siliguri';
     font-style: normal;
     font-weight: 600;
@@ -817,12 +830,12 @@ i {
 
     text-align: center;
     text-transform: uppercase;
-    
+
     color: #030D15;
     transition: 300ms;
 }
 
-.pop__all:hover{
+.pop__all:hover {
     color: #C72535;
 }
 
@@ -834,42 +847,13 @@ i {
     margin-top: 130px;
 }
 
-.shop__title {
-    font-family: 'Hind Siliguri';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 23px;
-
+.shop__heading {
+    width: 80%;
     text-align: center;
-    letter-spacing: 0.145em;
-    text-transform: uppercase;
-
-    color: #C72535;
-    opacity: 0.6;
 }
 
-.shop__header {
-    font-family: 'Hind Siliguri';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 71px;
-    text-align: center;
-
-    color: #030D15;
-}
-
-.shop__text{
-    width: 457px;   
-    font-family: 'Hind Siliguri';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+.shop__text {
+    width: 457px;
     text-align: center;
     margin: 7px auto 50px;
-
-    color: #030D15;
-    opacity: 0.6;
 }
